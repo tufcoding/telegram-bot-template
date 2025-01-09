@@ -1,9 +1,9 @@
 from config.settings import API_ID, API_HASH, BOT_TOKEN
-from bot.callbacks.callbacks import language_callback
-from bot.commands.commands import start_command
-from logger.logger import logger
+from bot.handlers import register_handlers
+from bot.tasks import register_tasks
 
-from pyrogram import Client, filters
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from pyrogram import Client
 
 app = Client(
     "my_bot",
@@ -12,9 +12,10 @@ app = Client(
     bot_token=BOT_TOKEN
 )
 
-app.on_message(filters.command("start"))(start_command)
-app.on_callback_query(filters.regex("^change_lang$"))(language_callback)
+tasks_app = AsyncIOScheduler()
 
 if __name__ == "__main__":
-    logger.info("Bot is running...")
+    register_tasks(app, tasks_app)
+    register_handlers(app)
+    tasks_app.start()
     app.run()

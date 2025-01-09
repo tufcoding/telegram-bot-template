@@ -6,6 +6,7 @@ A clean and scalable Telegram bot template using [Pyrotgfork](https://github.com
 
 - 🌐 Multi-language support with easy switching
 - 💾 SQLite database with SQLAlchemy ORM
+- 📅 Task scheduling with APScheduler
 - 📁 Clean and organized folder structure
 - ⚙️ Environment variables management
 - 🎯 Decorator-based user handling
@@ -41,9 +42,10 @@ Follow these simple steps to customize the bot:
 
 1. Add your commands in the `commands` folder
 2. Add your callbacks in the `callbacks` folder
-3. Register commands and callbacks in `main.py`
-4. Add new languages in the `languages` folder
-5. Create database models in the `database` folder
+3. Register commands and callbacks in `handlers.py` file
+4. Register tasks in `tasks.py` file
+5. Add new languages in the `languages` folder
+6. Create database models in the `database` folder
 
 ## 📈 Scaling to PostgreSQL (Optional)
 
