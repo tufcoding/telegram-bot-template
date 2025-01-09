@@ -1,4 +1,5 @@
-pyrotgfork
-tgcrypto
-sqlalchemy
-python-dotenv
+pyrotgfork==2.2.4
+tgcrypto==1.2.5
+sqlalchemy==2.0.37
+python-dotenv==1.0.1
+apscheduler==3.10.4
