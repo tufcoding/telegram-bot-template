@@ -1,0 +1,7 @@
+# English (United States)
+
+TEXTS = {
+    "welcome_message": "Hello <b>{}</b>! 👋\nWelcome to my bot.",
+    "language": "🇺🇸 English",
+    "credits": "👨‍💻 TUF Coding"
+} 
