@@ -59,9 +59,14 @@ To upgrade to PostgreSQL:
    ```python
    DATABASE_URL=postgresql://user:password@localhost/dbname
    ```
+
 ## 📝 Note
 
 This template follows Telegram bot development best practices and can be customized to suit your needs.
+For custom implementations, please reach out to us at any of the following links:
+
+- [Telegram](https://t.me/tufcoding)
+- [Discord](https://discord.com/invite/64CDPKPN3V)
 
 ## 🤝 Contributing
 
