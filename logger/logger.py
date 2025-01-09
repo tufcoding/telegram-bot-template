@@ -3,8 +3,8 @@ import logging
 import os
 
 # Create logs directory if it doesn't exist
-if not os.path.exists('logs'):
-    os.makedirs('logs')
+if not os.path.exists('logger/logs'):
+    os.makedirs('logger/logs')
 
 # Configure logger
 logger = logging.getLogger("TelegramBot")
