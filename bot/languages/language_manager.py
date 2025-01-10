@@ -62,3 +62,5 @@ class LanguageManager:
         current_index = self.language_codes.index(current_lang)
         next_index = (current_index + 1) % len(self.language_codes)
         return self.language_codes[next_index]
+
+lang_manager = LanguageManager()

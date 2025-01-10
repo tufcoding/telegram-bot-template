@@ -1,11 +1,9 @@
-from bot.languages.language_manager import LanguageManager
+from bot.languages.language_manager import lang_manager
 from bot.keyboards.keyboards import get_start_keyboard
 from bot.utils.decorators import get_user
 from logger.logger import logger
 
 from pyrogram.types import BotCommand
-
-lang_manager = LanguageManager()
 
 async def get_bot_commands():
     return [

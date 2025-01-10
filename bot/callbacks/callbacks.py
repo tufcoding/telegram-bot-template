@@ -1,9 +1,7 @@
-from bot.languages.language_manager import LanguageManager
+from bot.languages.language_manager import lang_manager
 from bot.keyboards.keyboards import get_start_keyboard
 from bot.utils.decorators import get_user
 from logger.logger import logger
-
-lang_manager = LanguageManager()
 
 @get_user()
 async def language_callback(client, callback_query, user, session):

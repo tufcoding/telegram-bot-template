@@ -1,8 +1,6 @@
-from bot.languages.language_manager import LanguageManager
+from bot.languages.language_manager import lang_manager
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
-lang_manager = LanguageManager()
 
 def get_start_keyboard(lang_code: str):
     return InlineKeyboardMarkup(
