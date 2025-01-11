@@ -9,4 +9,4 @@ API_HASH = os.getenv("API_HASH")
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # Database configuration
-DATABASE_URL = "sqlite:///bot.db"
+DATABASE_URL = "sqlite:///database/bot.db"
