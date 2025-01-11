@@ -1,4 +1,4 @@
-from bot.database import Session, User
+from database.database import Session, User
 from logger.logger import logger
 
 from pyrogram.types import Message, CallbackQuery
