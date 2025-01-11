@@ -6,4 +6,4 @@ from pyrogram import Client, filters
 
 def register_handlers(app: Client):
     app.on_message(filters.command("start"))(start_command)
-    app.on_callback_query(filters.regex("^change_lang$"))(language_callback)
+    app.on_callback_query(filters.regex(r"^change_lang$"))(language_callback)
